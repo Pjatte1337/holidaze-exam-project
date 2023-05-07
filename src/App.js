@@ -14,6 +14,7 @@ import NewVenuePage from './components/pages/newVenuePage';
 import BookedPage from './components/pages/bookedPage';
 import LogoutPage from './components/pages/logoutPage';
 import RouteNotFound from './components/pages/notFoundPage';
+import BookingPage from './components/pages/bookingPage';
 import "/node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "/node_modules/bootstrap/dist/js/bootstrap.bundle.min";
 
@@ -27,7 +28,7 @@ function Header() {
 }
 
 function Footer() {
-  return <FooterBar>Pjatte 2023</FooterBar>;
+  return <FooterBar>Pjatte1337 | 2023</FooterBar>;
 }
 
 function Layout() {
@@ -51,7 +52,8 @@ function App() {
           <Route index element={<Home />} />
           <Route path="login" element={<LoginPage />} />
           <Route path="register" element={<RegisterPage />} />
-          <Route path="profile" element={<ProfilePage />} />
+          <Route path="profile/:name" element={<ProfilePage />} />
+          <Route path="booking/:id" element={<BookingPage />} />
           <Route path="venue/:id" element={<VenuePage />} />
           <Route path="new-venue" element={<NewVenuePage />} />
           <Route path="booked-success" element={<BookedPage />} />
