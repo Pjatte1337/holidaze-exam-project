@@ -1,17 +1,24 @@
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import holidazeLogo from "../assets/images/holidaze-logo.png";
 import { Logo } from './styles/logo.styles';
-import { NavLink } from './styles/navLink.styles';
+import { NavLink, NavLinkDiv } from './styles/navLink.styles';
 import { useEffect} from 'react';
 
 function Nav() {
     const token = localStorage.getItem("Token");
     const manager = localStorage.getItem("Manager");
+    const name = localStorage.getItem("Name");
+    const navigate = useNavigate();
 
     const location = useLocation();
     
     useEffect(() => {
     }, [location]);
+
+    function handleLogout(){
+        localStorage.clear();
+        navigate("/logout");
+    }
 
     return (
         <nav className='row h-100 w-100 align-items-center py-3'>
@@ -40,15 +47,15 @@ function Nav() {
                 { token && manager === "false"
                     ? <ul className='row mb-0 list-style-type-none list-unstyled justify-content-end'>
                         <li className='col-3 col-sm-3 col-md-2 col-xxl-1 px-0'>
-                            <NavLink to='Profile'>
+                            <NavLink to={`/Profile/${name}`}>
                                 Profile
                             </NavLink>
                         </li>
                         <li className='col-3 col-sm-2 px-0'>
                             {/* Remember to make event listener for logout - should not be a link */}
-                            <NavLink to='Logout'> 
+                            <NavLinkDiv onClick={() => handleLogout()}> 
                                 Log out
-                            </NavLink>
+                            </NavLinkDiv>
                         </li>
                     </ul>
                         : ""
@@ -61,15 +68,15 @@ function Nav() {
                             </NavLink>
                         </li>
                         <li className='col-3 col-sm-3 col-md-2 col-xxl-1 px-0'>
-                            <NavLink to='Profile'>
+                            <NavLink to={`/profile/${name}`} >
                                 Profile
                             </NavLink>
                         </li>
                         <li className='col-3 col-sm-2 px-0'>
                             {/* Remember to make event listener for logout - should not be a link */}
-                            <NavLink to='Logout'> 
+                            <NavLinkDiv onClick={() => handleLogout()}> 
                                 Log out
-                            </NavLink>
+                            </NavLinkDiv>
                         </li>
                     </ul>
                         : ""
