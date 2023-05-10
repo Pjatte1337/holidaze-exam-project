@@ -164,27 +164,8 @@ const onSubmitHandler = async (e) => {
 
     return <main id="container p-5">
       <div className="d-flex justify-content-center mt-4">
-        <div className='col-11 col-sm-9 col-xl-7 rounded-5 overflow-hidden pb-4'>
+        <div className='col-11 col-sm-9 col-xl-7 overflow-hidden pb-4'>
           <div id="carouselIndicators" className="carousel slide" data-bs-ride="true">
-            <div className="carousel-indicators">
-              <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-              { data.media && data.media.length >= 2
-                ? <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                : ""
-              }
-              { data.media && data.media.length >= 3
-                ? <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                : ""
-              }
-              { data.media && data.media.length >= 4
-                ? <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                : ""
-              }
-              { data.media && data.media.length >= 5
-                ? <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                : ""
-              }
-            </div>
             <div className="carousel-inner">
               { data.media && data.media.length >= 1
                 ? <VenueImgContainer className="carousel-item active">
@@ -224,14 +205,6 @@ const onSubmitHandler = async (e) => {
                 : ""
               }
             </div>
-            <button className="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
-              <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span className="visually-hidden">Previous</span>
-            </button>
-            <button className="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
-              <span className="carousel-control-next-icon" aria-hidden="true"></span>
-              <span className="visually-hidden">Next</span>
-            </button>
           </div>
           <div className='d-flex flex-column'>
             <div className='row mt-4'>
