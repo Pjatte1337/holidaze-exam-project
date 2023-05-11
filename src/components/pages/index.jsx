@@ -1,4 +1,3 @@
-
 import MagnifyingGlass from "../../assets/images/holidaze-logo.png";
 import { SearchWrap } from "../styles/searchWrap.styled";
 import { VenueCard } from "../styles/venueCard.styles";
@@ -23,7 +22,7 @@ function Home() {
      }
 
      const { data, isLoading, isError } = useApi(
-        'https://api.noroff.dev/api/v1/holidaze/venues',
+        'https://api.noroff.dev/api/v1/holidaze/venues?sort=created',
         'GET'
       );
   
