@@ -1,17 +1,17 @@
 import { useEffect, useState } from "react";
 import { useParams } from 'react-router-dom';
 import { ProfileImgStyle, EditIconStyle } from "../styles/icons.styles";
-import PlaceholderImage from "../../assets/images/holidaze-logo.png";
+import PlaceholderImage from "../../assets/images/profile-icon.png";
 import useApi from "../useApi";
 import { Loader } from "../styles/loader.styles";
 import { VenueCard } from "../styles/venueCard.styles";
-import PersonIcon from "../../assets/images/holidaze-logo.png";
-import WifiIcon from "../../assets/images/holidaze-logo.png";
-import ParkingIcon from "../../assets/images/holidaze-logo.png";
-import FoodIcon from "../../assets/images/holidaze-logo.png";
-import PetsIcon from "../../assets/images/holidaze-logo.png";
-import PlaceholderImg from "../../assets/images/holidaze-logo.png";
-import editIcon from "../../assets/images/holidaze-logo.png";
+import PersonIcon from "../../assets/images/person-icon.png";
+import WifiIcon from "../../assets/images/wifi-icon.png";
+import ParkingIcon from "../../assets/images/parking-icon.png";
+import FoodIcon from "../../assets/images/breakfast-icon.png";
+import PetsIcon from "../../assets/images/pets-icon.png";
+import PlaceholderImg from "../../assets/images/placeholder-image.png";
+import editIcon from "../../assets/images/options-icon.png";
 import { PersonIconStyle } from '../styles/venue.styling';
 import { ButtonSmaller, ButtonSmaller2 } from '../styles/buttons.styles';
 import { ContainerCard } from "../styles/containerCard.styles";
@@ -374,7 +374,7 @@ const { register, handleSubmit, formState: { errors }, reset } = useForm({
         : ""}
       </ContainerCard>
       {data.venueManager && data.venues.length !== 0
-      ? <div className='col-11 col-sm-9 col-xl-7 mt-4'>
+      ? <div className='col-11 col-sm-9 col-xl-7 mt-4 px-3'>
           <h2>{data.name}'s Venues</h2>
           <div className="d-flex justify-content-evenly gap-4 mt-4 flex-wrap">
                 {data.venues.map((data) => (

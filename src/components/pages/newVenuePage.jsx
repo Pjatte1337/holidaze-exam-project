@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import { InputGuests } from "../styles/venue.styling";
-import personIcon from "../../assets/images/holidaze-logo.png";
+import personIcon from "../../assets/images/person-icon.png";
 import { Links } from "../styles/links.style";
 import { useNavigate } from "react-router-dom";
 

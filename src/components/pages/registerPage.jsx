@@ -4,7 +4,7 @@ import React, { useEffect} from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
-import profileImage from "../../assets/images/holidaze-logo.png";
+import profileImage from "../../assets/images/profile-icon.png";
 import { RegisterProfileIcon } from "../styles/icons.styles";
 import { useNavigate } from "react-router-dom";
 
@@ -84,7 +84,7 @@ function RegisterPage() {
         if ( json.id ) {
           navigate("/login");
         } else {
-          console.log("Some error occured");
+          alert(json.errors[0].message);
         }
 
       } catch (error) {
