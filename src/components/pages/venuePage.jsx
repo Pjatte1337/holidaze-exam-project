@@ -53,7 +53,7 @@ const schema = yup
       .when('media', {
         is: null || "",
         then: () => yup.string().nullable(),
-        otherwise: () => yup.string().matches(/(http)?s?:?(\/\/[^"']*\.(?:jpg|jpeg|gif|png|svg))/, "Must be a direct image link")
+        otherwise: () => yup.string().matches(/(http)?s?:?(\/\/[^"']*\.(?:jpg|jpeg|gif|png|svg))/ | "https://source.unsplash.com/1600x900/?hotel", "Must be a direct image link")
       }),
     price: yup
       .number()
@@ -94,8 +94,8 @@ function VenuePage() {
 
   const onClickConfirm = async (e) => {
     confirmAlert({
-      title: 'Cancel booking',
-      message: 'Are you sure you want to cancel your order?',
+      title: 'Delete venue',
+      message: 'Are you sure you want to delete this venue?',
       buttons: [
         {
           label: 'Yes',
@@ -281,9 +281,9 @@ const onSubmitHandler = async (e) => {
                     <img src={data.media[0]} className="d-block w-100" alt="accommodation" onError={(e)=>{ if (e.target.src !== PlaceholderImg) 
                             { e.target.onerror = null; e.target.src=PlaceholderImg; } }}/>
                   </VenueImgContainer>
-                : <VenueImgContainer className="carousel-item">
-                <img src={PlaceholderImg} className="d-block w-100" alt="accommodation" />
-              </VenueImgContainer>
+                : <VenueImgContainer className="carousel-item active">
+                    <img src={PlaceholderImg} className="d-block w-100" alt="accommodation" />
+                  </VenueImgContainer>
               }
               { data.media && data.media.length >= 2
                 ? <VenueImgContainer className="carousel-item">
@@ -363,25 +363,25 @@ const onSubmitHandler = async (e) => {
             <div>
               <h2 className='border-bottom border-dark w-100 mt-4'>Services</h2>
               <div className="d-flex justify-content-evenly my-4">
-                  { data.meta && data.meta.wifi 
+                  { data.meta && data.meta.wifi
                       ? <div className='d-flex flex-column align-items-center'>
                           <ServicesIcons src={WifiIcon} className="card-icons" alt="wifi icon"/> 
                           <div className='mt-1 fs-5'>Wi-fi</div>
                         </div>
                       : "" }
-                  { data.meta && data.meta.parking 
+                  { data.meta && data.meta.parking
                       ? <div className='d-flex flex-column align-items-center'>
                           <ServicesIcons src={ParkingIcon} className="card-icons" alt="parking icon"/> 
                           <div className='mt-1 fs-5'>Parking</div>
                         </div>
                       : "" }
-                  { data.meta && data.meta.breakfast 
+                  { data.meta && data.meta.breakfast
                       ? <div className='d-flex flex-column align-items-center'>
                           <ServicesIcons src={FoodIcon} className="card-icons" alt="breakfast icon"/> 
                           <div className='mt-1 fs-5'>Breakfast</div>
                         </div>
                       : "" }
-                  { data.meta && data.meta.parking 
+                  { data.meta && data.meta.pets
                       ? <div className='d-flex flex-column align-items-center'>
                           <ServicesIcons src={PetsIcon} className="card-icons" alt="pets icon"/>
                           <div className='mt-1 fs-5'>Pets</div>
