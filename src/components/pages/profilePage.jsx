@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from 'react-router-dom';
 import { ProfileImgStyle, EditIconStyle } from "../styles/icons.styles";
 import PlaceholderImage from "../../assets/images/profile-icon.png";
-import useApi from "../useApi";
+import useApi from "../feature/useApi";
 import { Loader } from "../styles/loader.styles";
 import { VenueCard } from "../styles/venueCard.styles";
 import PersonIcon from "../../assets/images/person-icon.png";
