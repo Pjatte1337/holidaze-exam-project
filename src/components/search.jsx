@@ -41,7 +41,7 @@ function Search() {
 
 
     setFilteredProducts(results);
-  }, [, , , , , ]);
+  }, );
 
   const cut20 = (line) => {
     return line.slice(0, 20) + "...";
