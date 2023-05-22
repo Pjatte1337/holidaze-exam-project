@@ -2,9 +2,9 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const Links = styled(Link)`
-    color: #C45500;
+  color: #32de84;
 
-    :hover {
-        color: #994000;
-    }
+  :hover {
+    color: #000000;
+  }
 `;

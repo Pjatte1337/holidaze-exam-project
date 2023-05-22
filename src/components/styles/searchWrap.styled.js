@@ -5,7 +5,7 @@ export const SearchWrap = styled.div`
     height: 3rem;
     padding: 0 0 0 0.3rem;
     border-radius: 10px;
-    border: solid 2px #495B70;
+    border: solid 2px #000000;
     background: white;
     display: flex;
     align-items: center;
@@ -19,7 +19,7 @@ export const SearchWrap = styled.div`
         margin: 0 0 0 0.3rem;
 
         :focus {
-            outline: solid 2px #F18842;
+            outline: ;
         }
     }
 

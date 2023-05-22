@@ -1,22 +1,24 @@
 import { Hidden } from "../styles/hidden.styles";
-import React, { useEffect } from 'react';
+import React from "react";
 import Search from "../search";
+import DocumentMeta from "react-document-meta";
 
 function Home() {
-    useEffect(() => {
-        document.title = "Holidaze | Home"
-     }, []);
+  const meta = {
+    title: "Holidaze | Home",
+  };
 
-    return (
-        <main className="container d-flex flex-column p-5">
-            <Hidden>
-                <h1>
-                    Front page
-                </h1>
-            </Hidden>
-            <Search />
-        </main>
-    )
-  }
+  return (
+    <>
+      <DocumentMeta {...meta} />
+      <main className="container d-flex flex-column p-5">
+        <Hidden>
+          <h1>Front page</h1>
+        </Hidden>
+        <Search />
+      </main>
+    </>
+  );
+}
 
-  export default Home;
+export default Home;
