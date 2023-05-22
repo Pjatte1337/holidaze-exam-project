@@ -18,7 +18,6 @@ import { ContainerCard } from "../styles/containerCard.styles";
 import { confirmAlert } from "react-confirm-alert";
 import "react-confirm-alert/src/react-confirm-alert.css";
 import { Error, Input } from "../styles/form.styles";
-import { Links } from "../styles/links.style";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
@@ -263,14 +262,7 @@ function ProfilePage() {
                             </ProfileImgStyle>
                             <div className="col">
                               <label className="fs-5" htmlFor="editImg">
-                                Direct Image Link (generate on{" "}
-                                <Links
-                                  target="_blank"
-                                  to="https://postimages.org/"
-                                >
-                                  postimages.org
-                                </Links>
-                                )
+                                Direct Image Link
                               </label>
                               <Input
                                 id="editImg"

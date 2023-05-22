@@ -75,11 +75,6 @@ const venueSchema = yup
         otherwise: () =>
           yup
             .string()
-            .matches(
-              /(http)?s?:?(\/\/[^"']*\.(?:jpg|jpeg|gif|png|svg))/ |
-                "https://source.unsplash.com/1600x900/?hotel",
-              "Must be a direct image link"
-            ),
       }),
       price: yup
         .number()
@@ -765,16 +760,6 @@ function VenuePage() {
                                   {...regEdit("media")}
                                   defaultValue={data.media[0]}
                                 />
-                                <div>
-                                  (Generate on{" "}
-                                  <Links
-                                    to="https:/postimages.org/"
-                                    target="_blank"
-                                  >
-                                    postimages.org
-                                  </Links>
-                                  )
-                                </div>
                                 <Error>{errorsEdit.media?.message}</Error>
                               </div>
                               <div className="d-flex gap-4 ms-1">
