@@ -1,5 +1,5 @@
 import { Links } from "../styles/links.style";
-import DocumentMeta from 'react-document-meta';
+import DocumentMeta from "react-document-meta";
 
 function RouteNotFound() {
 
@@ -11,7 +11,7 @@ function RouteNotFound() {
       <>
         <DocumentMeta {...meta} />
         <main className="container d-flex flex-column justify-content-center align-items-center h-100">
-          <div className="fs-4">Page not found</div>
+          <div className="fs-4">404</div>
           <Links className="fs-5" to='/'>Back to front page</Links>
         </main>
       </>

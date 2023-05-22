@@ -11,10 +11,10 @@ const schema = yup
   .object({
     email: yup
       .string()
-      .email("Please enter a valid email")
+      .email("Please enter your e-mail")
       .matches(
-        /^[\w-.]+@stud.?noroff.no$/,
-        "Must be a student Noroff email (ending in @stud.noroff.no)"
+        /^[\w\-.]+@stud.?noroff.no$/,
+        "Must be a student noroff e-mail (ending in @stud.noroff.no)"
       )
       .required("Please enter a valid email address")
       .typeError("Please enter a valid email address"),
@@ -22,7 +22,7 @@ const schema = yup
       .string()
       .min(8, "Must contain more than 8 characters")
       .matches(
-        /(?=.[A-Za-z])(?=.\d)[A-Za-z\d]/,
+        /(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]/,
         "Must contain at least one uppercase and lowercase letter, as well as a number"
       )
       .required("Please enter your password")
@@ -65,7 +65,8 @@ function LoginPage() {
         localStorage.setItem("Manager", json.venueManager);
         reset();
         navigate("/");
-      } else if (json.errors) {
+      }
+      if (json.errors) {
         alert(json.errors[0].message);
       }
     } catch (error) {

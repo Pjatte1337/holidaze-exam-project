@@ -7,7 +7,7 @@ import { InputGuests } from "../styles/venue.styling";
 import personIcon from "../../assets/images/person-icon.png";
 import { Links } from "../styles/links.style";
 import { useNavigate } from "react-router-dom";
-import DocumentMeta from 'react-document-meta';
+import DocumentMeta from "react-document-meta";
 
 
 const schema = yup
@@ -163,6 +163,7 @@ const onSubmitHandler = async (e) => {
                       <div className="d-flex flex-column">
                         <label className="fs-5" htmlFor='media'>Direct Image link</label>
                         <Input2 id="media" title="A direct image link usually ends with '.jpg' or something similar" {...register("media")} />
+                        <div>(Generate on <Links to="https:/postimages.org/" target="_blank">postimages.org</Links>)</div>
                         <Error>{errors.media?.message}</Error>
                       </div>
                       <div className="d-flex gap-5 ms-1">

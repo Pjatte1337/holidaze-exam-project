@@ -1,10 +1,11 @@
 import { Links } from "../styles/links.style";
-import DocumentMeta from 'react-document-meta';
+import DocumentMeta from "react-document-meta";
 
 function LogoutPage() {
 
  const meta = {
-  title: 'Holidaze | Logged out'}
+  title: 'Holidaze | Logged out'
+ }
 
     return (
     <>
