@@ -70,7 +70,10 @@ function Search() {
   }
 
   return (
-    <>
+    <> 
+      <div className="d-flex flex-wrap gap-4 align-self-center align-items-center justify-content-center p5">
+        <h2>Relax in between your adventures</h2>
+      </div>
       <div className="d-flex flex-wrap gap-4 align-self-center align-items-center justify-content-center">
         <SearchWrap>
           <img src={MagnifyingGlass} alt="" />
