@@ -9,15 +9,18 @@ export const VenueCard = styled(Link)`
     width: 16rem;
     font-size: 1.1rem;
     filter: drop-shadow(1px 1px 2px grey);
+
     :hover {
         transform: scale(1.02);
         color: black;
     }
+
     .card-img-wrap {
         width: 100%;
         height: 10rem;
         overflow: hidden;
         border-radius: 10px 10px 0 0;
+
         img {
             object-fit: cover;
             min-width: 100%;
@@ -25,9 +28,11 @@ export const VenueCard = styled(Link)`
             min-height: 100%;
         }
     }
+
     .person-icon {
         height: 1.3rem;
     }
+
     .card-icons {
         height: 1.5rem;
     }
