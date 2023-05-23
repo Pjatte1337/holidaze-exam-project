@@ -567,7 +567,7 @@ function VenuePage() {
 
               <div>
                 <h2 className="border-bottom border-dark w-100 mt-4">
-                  Services
+                This place offers
                 </h2>
                 <div className="d-flex justify-content-evenly my-4">
                   {data.meta && data.meta.wifi ? (

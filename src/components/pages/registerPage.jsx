@@ -4,8 +4,6 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import profileImage from "../../assets/images/profile-icon.png";
-import { RegisterProfileIcon } from "../styles/icons.styles";
 import { useNavigate } from "react-router-dom";
 import DocumentMeta from "react-document-meta";
 
@@ -109,7 +107,6 @@ function RegisterPage() {
       <main className="container d-flex justify-content-center align-items-center h-100 my-5">
         <div className="col-10 col-lg-6 col-xl-5 mb-5">
           <div className="d-flex align-items-center mb-2">
-            <RegisterProfileIcon src={profileImage} alt="Profile icon" />
             <h1 className="mb-0 mt-2 ms-2">Register</h1>
           </div>
           <form
