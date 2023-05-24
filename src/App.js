@@ -9,7 +9,7 @@ import Login from "./components/pages/login";
 import Register from "./components/pages/register";
 import Profile from "./components/pages/profile";
 import Venue from "./components/pages/venue";
-import NewVenue from "./components/pages/newVenue";
+import CreateVenue from "./components/pages/createVenue";
 import Booked from "./components/pages/booked";
 import Logout from "./components/pages/logout";
 import RouteNotFound from "./components/pages/notFound";
@@ -50,7 +50,7 @@ function App() {
           <Route path="profile/:name" element={<Profile />} />
           <Route path="booking/:id/:venue" element={<Booking />} />
           <Route path="venue/:id" element={<Venue />} />
-          <Route path="new-venue" element={<NewVenue />} />
+          <Route path="new-venue" element={<CreateVenue />} />
           <Route path="booked-success" element={<Booked />} />
           <Route path="logout" element={<Logout />} />
           <Route path="*" element={<RouteNotFound />} />
