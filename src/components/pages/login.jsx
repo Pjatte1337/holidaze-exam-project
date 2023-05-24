@@ -30,7 +30,7 @@ const schema = yup
   })
   .required();
 
-function LoginPage() {
+function Login() {
   const navigate = useNavigate();
   const url = "https://api.noroff.dev/api/v1/holidaze/auth/login";
 
@@ -108,4 +108,4 @@ function LoginPage() {
   );
 }
 
-export default LoginPage;
+export default Login;

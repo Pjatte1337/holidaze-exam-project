@@ -1,7 +1,7 @@
 import { Links } from "../styles/links.style";
 import DocumentMeta from "react-document-meta";
 
-function BookedPage() {
+function Booked() {
   const name = localStorage.getItem("Name");
 
   const meta = {
@@ -23,4 +23,4 @@ function BookedPage() {
   );
 }
 
-export default BookedPage;
+export default Booked;

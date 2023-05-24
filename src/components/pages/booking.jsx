@@ -8,7 +8,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import EditBooking from "../edit";
 import DocumentMeta from "react-document-meta";
 
-function BookingPage() {
+function Booking() {
   let params = useParams();
 
   const meta = {
@@ -257,4 +257,4 @@ function BookingPage() {
   );
 }
 
-export default BookingPage;
+export default Booking;

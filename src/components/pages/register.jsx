@@ -36,7 +36,7 @@ const schema = yup
   })
   .required();
 
-function RegisterPage() {
+function Register() {
   const navigate = useNavigate();
   const url = "https://api.noroff.dev/api/v1/holidaze/auth/register";
 
@@ -184,4 +184,4 @@ function RegisterPage() {
   );
 }
 
-export default RegisterPage;
+export default Register;

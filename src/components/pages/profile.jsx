@@ -35,7 +35,7 @@ const schema = yup
   })
   .required();
 
-function ProfilePage() {
+function Profile() {
   const params = useParams();
   const userName = localStorage.getItem("Name");
   const [imgUrl, setImgUrl] = useState(PlaceholderImage);
@@ -686,4 +686,4 @@ function ProfilePage() {
   );
 }
 
-export default ProfilePage;
+export default Profile;

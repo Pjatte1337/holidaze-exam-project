@@ -96,7 +96,7 @@ const venueSchema = yup
   )
   .required();
 
-function VenuePage() {
+function Venue() {
   let params = useParams();
   const navigate = useNavigate();
   const [venueName, setVenueName] = useState("");
@@ -891,4 +891,4 @@ function VenuePage() {
   );
 }
 
-export default VenuePage;
+export default Venue;

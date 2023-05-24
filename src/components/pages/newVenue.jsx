@@ -51,7 +51,7 @@ const schema = yup
   }, [['media', 'media']])
   .required();
 
-function NewVenuePage() {
+function NewVenue() {
   const navigate = useNavigate();
 
  const meta = {
@@ -203,4 +203,4 @@ const onSubmitHandler = async (e) => {
     )
   }
 
-  export default NewVenuePage;
+  export default NewVenue;

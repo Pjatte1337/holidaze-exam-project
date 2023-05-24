@@ -1,7 +1,7 @@
 import { Links } from "../styles/links.style";
 import DocumentMeta from "react-document-meta";
 
-function LogoutPage() {
+function Logout() {
 
  const meta = {
   title: 'Holidaze | Logged out'
@@ -20,4 +20,4 @@ function LogoutPage() {
     )
   }
 
-  export default LogoutPage;
+  export default Logout;
