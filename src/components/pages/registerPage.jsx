@@ -30,7 +30,7 @@ const schema = yup
       .typeError("Please enter your password"),
     retypePassword: yup
       .string()
-      .required("Please retype your password")
+      .required("Please repeat your password")
       .oneOf([yup.ref("password")], "Your passwords do not match"),
     venueManager: yup.string().required("Choose what type of user you are"),
   })

@@ -42,16 +42,7 @@ function ProfilePage() {
   const name = params.name;
 
   const meta = {
-    title: `Holidaze | Profile | ${name}`,
-    description:
-      "Holidaze is an accommodation website where you can book venues for specific dates. View and book an amazing venue for your holiday today!",
-    meta: {
-      charset: "utf-8",
-      name: {
-        keywords:
-          "holidaze, accommodation, venues, hotels, housing, react, rent, booking, vacation, holiday",
-      },
-    },
+    title: `Holidaze | Profile | ${name}`
   };
 
   const cut20 = (line) => {
@@ -261,9 +252,7 @@ function ProfilePage() {
                               />
                             </ProfileImgStyle>
                             <div className="col">
-                              <label className="fs-5" htmlFor="editImg">
-                                Direct Image Link
-                              </label>
+                            <label className="fs-5" htmlFor='media'>Direct Image link (Generate on postimages.org) </label>
                               <Input
                                 id="editImg"
                                 className="w-100"

@@ -12,7 +12,7 @@ const Input = styled.input`
 `;
 
 const Error = styled.div`
-  color: #495b70;
+  color: #FF0000;
   min-height: 1.1rem;
 `;
 

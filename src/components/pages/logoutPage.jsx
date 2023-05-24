@@ -12,7 +12,7 @@ function LogoutPage() {
       <DocumentMeta {...meta} />
       <main className="container d-flex flex-column justify-content-center align-items-center h-100">
         <h1>
-          You have successfully been logged out!
+          You have been logged out!
         </h1>
         <Links className="fs-5" to="/">Back to front page</Links>
       </main>

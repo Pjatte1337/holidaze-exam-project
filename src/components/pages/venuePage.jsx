@@ -67,7 +67,7 @@ const venueSchema = yup
         .string()
         .required("Please enter a description")
         .typeError("Please enter a description")
-        .min(20, "Must contain at least 20 characters")
+        .min(10, "Must contain at least 10 characters")
         .max(2500, "Max 2500 characters"),
       media: yup.string().when("media", {
         is: null || "",
@@ -84,7 +84,7 @@ const venueSchema = yup
       maxGuests: yup
         .number()
         .typeError("Please enter a number")
-        .required("Please enter maximum amount of guests")
+        .required("Please enter amount of guests")
         .min(1, "Must be at least 1 guest")
         .max(100, "Max 100 guests"),
       wifi: yup.boolean(),
@@ -627,7 +627,7 @@ function VenuePage() {
                 <p>{data.description}</p>
               </div>
               <div>
-                <h2 className="border-bottom border-dark w-100 mt-4">Owner</h2>
+                <h2 className="border-bottom border-dark w-100 mt-4">Venue Manager</h2>
                 <div className="d-flex align-items-center my-4">
                   {data.owner && data.owner.avatar ? (
                     <ProfileImgStyle>
@@ -700,7 +700,7 @@ function VenuePage() {
                             <div className="col-12 col-md-5">
                               <div className="d-flex flex-column">
                                 <label className="fs-5" htmlFor="name">
-                                  Venue Name*
+                                  Name
                                 </label>
                                 <Input2
                                   id="name"
@@ -712,7 +712,7 @@ function VenuePage() {
                               <div className="row flex-row">
                                 <div className="pe-0 col">
                                   <label className="fs-5" htmlFor="maxGuests">
-                                    Max Guest(s)*
+                                    Guest
                                   </label>
                                   <InputGuests className="d-flex">
                                     <input
@@ -730,7 +730,7 @@ function VenuePage() {
                                 </div>
                                 <div className="col-12">
                                   <label className="fs-5" htmlFor="price">
-                                    Price*
+                                    Price
                                   </label>
                                   <div className="d-flex">
                                     <Input2
@@ -744,16 +744,13 @@ function VenuePage() {
                                     />
                                     <span className="ms-1 fs-5">kr</span>
                                   </div>
-                                  <div>(per night)</div>
                                   <Error>{errorsEdit.price?.message}</Error>
                                 </div>
                               </div>
                             </div>
                             <div className="col-12 col-md-7">
                               <div className="d-flex flex-column">
-                                <label className="fs-5" htmlFor="media">
-                                  Direct Image link
-                                </label>
+                              <label className="fs-5" htmlFor='media'>Direct Image link (Generate on postimages.org) </label>
                                 <Input2
                                   id="media"
                                   title="A direct image link usually ends with '.jpg' or something similar"

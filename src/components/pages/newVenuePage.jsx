@@ -20,7 +20,7 @@ const schema = yup
       .string()
       .required('Please enter a description')
       .typeError('Please enter a description')
-      .min(20, "Must contain at least 20 characters")
+      .min(10, "Must contain at least 10 characters")
       .max(2500, "Max 2500 characters"),
     media: yup
       .string()
@@ -37,7 +37,7 @@ const schema = yup
     maxGuests: yup
       .number()
       .typeError('Please enter a number')
-      .required('Please enter maximum amount of guests')
+      .required('Please enter amount of guests')
       .min(1, "Must be at least 1 guest")
       .max(100, "Max 100 guests"),
     wifi: yup
@@ -134,13 +134,13 @@ const onSubmitHandler = async (e) => {
                   <div className="row flex-wrap">
                     <div className="col-12 col-md-6">
                       <div className="d-flex flex-column">
-                        <label className="fs-5" htmlFor='name'>Venue Name*</label>
+                        <label className="fs-5" htmlFor='name'>Name</label>
                         <Input2 id="name" {...register("name")} />
                         <Error>{errors.name?.message}</Error>
                       </div>
                       <div className="row flex-row">
                         <div className="pe-0 col">
-                          <label className="fs-5" htmlFor='maxGuests'>Max Guest(s)*</label>
+                          <label className="fs-5" htmlFor='maxGuests'>Guest</label>
                             <InputGuests className='d-flex'>
                               <input id='maxGuests' {...register("maxGuests")} className='text-end' min={0} max={100} type='number' defaultValue={0}></input>
                               <img src={personIcon} alt='Person icon' />
@@ -148,19 +148,18 @@ const onSubmitHandler = async (e) => {
                             <Error>{errors.maxGuests?.message}</Error>
                         </div>
                         <div className="col-12 col-sm-12">
-                          <label className="fs-5" htmlFor='price'>Price*</label>
+                          <label className="fs-5" htmlFor='price'>Price</label>
                           <div className="d-flex">
                             <Input2 id="price" className="text-end fs-4" min={0} max={999999} type="number" defaultValue={0} {...register("price")} />
                             <span className="ms-1 fs-5">kr</span>
                           </div>
-                          <div>(per night)</div>
                           <Error>{errors.price?.message}</Error>
                         </div>
                       </div>
                     </div>
                     <div className="col-12 col-md-6">
                       <div className="d-flex flex-column">
-                        <label className="fs-5" htmlFor='media'>Direct Image link</label>
+                        <label className="fs-5" htmlFor='media'>Direct Image link (Generate on postimages.org) </label>
                         <Input2 id="media" title="A direct image link usually ends with '.jpg' or something similar" {...register("media")} />
                         <Error>{errors.media?.message}</Error>
                       </div>
@@ -194,7 +193,7 @@ const onSubmitHandler = async (e) => {
                     <Error>{errors.description?.message}</Error>
                   </div>
                   <div className="d-flex justify-content-center">
-                    <Button type="submit">Post Venue</Button>
+                    <Button type="submit">Post</Button>
                   </div>
               </form>
             </div>
