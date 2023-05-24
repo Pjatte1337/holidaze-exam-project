@@ -140,7 +140,7 @@ const onSubmitHandler = async (e) => {
                       </div>
                       <div className="row flex-row">
                         <div className="pe-0 col">
-                          <label className="fs-5" htmlFor='maxGuests'>Guest</label>
+                          <label className="fs-5" htmlFor='maxGuests'>Guests</label>
                             <InputGuests className='d-flex'>
                               <input id='maxGuests' {...register("maxGuests")} className='text-end' min={0} max={100} type='number' defaultValue={0}></input>
                               <img src={personIcon} alt='Person icon' />

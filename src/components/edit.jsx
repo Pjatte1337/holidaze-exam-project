@@ -213,7 +213,7 @@ function EditBooking(props) {
         <div className="d-flex justify-content-center my-5 w-100">
           <form className="d-flex flex-column justify-content-between flex-wrap ms-2">
             <div className="d-flex flex-column fs-5">
-              <label htmlFor="dateArrival">Date of arrival</label>
+              <label htmlFor="dateArrival">Arrival</label>
               <DateInput
                 className="text-center"
                 id="dateArrival"
@@ -230,7 +230,7 @@ function EditBooking(props) {
               <Error>{errors.dateArrival?.message}</Error>
             </div>
             <div className="d-flex flex-column fs-5">
-              <label htmlFor="dateDeparture">Date of departure</label>
+              <label htmlFor="dateDeparture">Departure</label>
               <DateInput
                 className="text-center"
                 id="dateDeparture"

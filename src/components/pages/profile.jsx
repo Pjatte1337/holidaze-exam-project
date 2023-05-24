@@ -387,15 +387,15 @@ function Profile() {
                           <>
                             <div className="d-flex flex-column justify-content-between flex-wrap ms-2">
                               <div className="d-flex flex-column fs-5">
-                                <div>Date of arrival</div>
+                                <div>Arrival</div>
                                 <div>{data.dateFrom.slice(0, 10)}</div>
                               </div>
                               <div className="d-flex flex-column fs-5">
-                                <div>Date of departure</div>
+                                <div>Departure</div>
                                 <div>{data.dateTo.slice(0, 10)}</div>
                               </div>
                               <div className="d-flex flex-column fs-5">
-                                <div>Guest(s)</div>
+                                <div>Guests</div>
                                 <div className="d-flex">
                                   <div className="text-end">{data.guests}</div>
                                   <PersonIconStyle
@@ -423,15 +423,15 @@ function Profile() {
                           <>
                             <div className="d-flex flex-column justify-content-between flex-wrap ms-2">
                               <div className="d-flex flex-column fs-5">
-                                <div>Date of arrival</div>
+                                <div>Arrival</div>
                                 <div>{data.dateFrom.slice(0, 10)}</div>
                               </div>
                               <div className="d-flex flex-column fs-5">
-                                <div>Date of departure</div>
+                                <div>Departure</div>
                                 <div>{data.dateTo.slice(0, 10)}</div>
                               </div>
                               <div className="d-flex flex-column fs-5">
-                                <label>Guest(s)</label>
+                                <label>Guests</label>
                                 <div className="d-flex">
                                   <div className="text-end">{data.guests}</div>
                                   <PersonIconStyle
@@ -552,15 +552,15 @@ function Profile() {
                         </VenueCard>
                         <div className="d-flex flex-column justify-content-between flex-wrap ms-2">
                           <div className="d-flex flex-column fs-5">
-                            <div>Date of arrival</div>
+                            <div>Arrival</div>
                             <div>{data.dateFrom.slice(0, 10)}</div>
                           </div>
                           <div className="d-flex flex-column fs-5">
-                            <div>Date of departure</div>
+                            <div>Departure</div>
                             <div>{data.dateTo.slice(0, 10)}</div>
                           </div>
                           <div className="d-flex flex-column fs-5">
-                            <div>Guest(s)</div>
+                            <div>Guest</div>
                             <div className="d-flex">
                               <div className="text-end">{data.guests}</div>
                               <PersonIconStyle

@@ -492,7 +492,7 @@ function Venue() {
                 >
                   <div className="col d-flex justify-content-evenly">
                     <div className="d-flex flex-column fs-5">
-                      <label htmlFor="dateArrival">Date of arrival</label>
+                      <label htmlFor="dateArrival">Arrival</label>
                       {bookings ? (
                         <DateInput
                           className="text-center"
@@ -513,7 +513,7 @@ function Venue() {
                       <Error>{errorsBook.dateArrival?.message}</Error>
                     </div>
                     <div className="d-flex flex-column fs-5">
-                      <label htmlFor="dateDeparture">Date of departure</label>
+                      <label htmlFor="dateDeparture">Departure</label>
                       {bookings ? (
                         <DateInput
                           className="text-center"
@@ -536,7 +536,7 @@ function Venue() {
                   </div>
                   <div className="col d-flex justify-content-evenly align-items-center">
                     <div className="d-flex flex-column fs-5">
-                      <label htmlFor="numberGuests">Guest(s)</label>
+                      <label htmlFor="numberGuests">Guests</label>
                       <InputGuests className="d-flex">
                         <input
                           id="numberGuests"
@@ -712,7 +712,7 @@ function Venue() {
                               <div className="row flex-row">
                                 <div className="pe-0 col">
                                   <label className="fs-5" htmlFor="maxGuests">
-                                    Guest
+                                  Guests
                                   </label>
                                   <InputGuests className="d-flex">
                                     <input
@@ -863,9 +863,9 @@ function Venue() {
                     <thead>
                       <tr className="table-secondary">
                         <th scope="col">Order no.</th>
-                        <th scope="col">Date of arrival</th>
-                        <th scope="col">Date of departure</th>
-                        <th scope="col">Guest(s)</th>
+                        <th scope="col">Arrival</th>
+                        <th scope="col">Departure</th>
+                        <th scope="col">Guests</th>
                       </tr>
                     </thead>
                     <tbody>
