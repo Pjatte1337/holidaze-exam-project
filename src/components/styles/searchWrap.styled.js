@@ -15,7 +15,7 @@ export const SearchWrap = styled.div`
         height: 100%;
         border: 0;
         border-radius: 9px;
-        font-size: 1.2em;
+        font-size: 1em;
         margin: 0 0 0 0.3rem;
 
         :focus {

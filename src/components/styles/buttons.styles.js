@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Button = styled.button`
   width: 12rem;
   height: 3rem;
-  font-size: 1.4em;
+  font-size: 1.3em;
   font-weight: bolder;
   border: 0;
   border-radius: 10px;
@@ -21,7 +21,7 @@ const Button = styled.button`
 const Button2 = styled.button`
   width: 12rem;
   height: 3rem;
-  font-size: 1.4em;
+  font-size: 1.3em;
   font-weight: bolder;
   border: 0;
   border-radius: 10px;
@@ -38,7 +38,7 @@ const Button2 = styled.button`
 const ButtonSmaller = styled(Link)`
   width: 8rem;
   height: 2.5rem;
-  font-size: 1.4em;
+  font-size: 1.3em;
   font-weight: bolder;
   border: 0;
   border-radius: 10px;
@@ -60,7 +60,7 @@ const ButtonSmaller = styled(Link)`
 const ButtonSmaller2 = styled(Link)`
   width: 8rem;
   height: 2.5rem;
-  font-size: 1.4em;
+  font-size: 1.3em;
   font-weight: bolder;
   border: 0;
   border-radius: 10px;

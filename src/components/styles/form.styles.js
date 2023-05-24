@@ -4,7 +4,7 @@ const Input = styled.input`
   border: solid 1px #495b70;
   height: 2.5rem;
   border-radius: 8px;
-  font-size: 1.2em;
+  font-size: 1.1em;
 
   :focus {
     outline: solid 2px #32de84;
@@ -13,23 +13,23 @@ const Input = styled.input`
 
 const Error = styled.div`
   color: #495b70;
-  min-height: 1.2rem;
+  min-height: 1.1rem;
 `;
 
 const Radio = styled.input`
   accent-color: #495b70;
   transform: scale(1.32);
-  height: 1.2rem;
+  height: 1.1rem;
 `;
 
 const Check = styled.input`
   accent-color: #495b70;
   transform: scale(1.32);
-  height: 1.2rem;
+  height: 1.1rem;
 `;
 
 const Input2 = styled.input`
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   border: solid 1px #495b70;
   height: 2.5rem;
   padding: 0 0.1rem 0 0;
@@ -42,7 +42,7 @@ const Input2 = styled.input`
 `;
 
 const TextArea = styled.textarea`
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   border: solid 1px #495b70;
   height: 10rem;
   padding: 0 0.1rem 0 0;

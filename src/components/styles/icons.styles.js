@@ -1,9 +1,6 @@
 import styled from "styled-components";
 
-const RegisterProfileIcon = styled.img`
-  width: 4rem;
-  height: 4rem;
-`;
+
 
 const ProfileImgStyle = styled.div`
   height: 7rem;
@@ -25,9 +22,9 @@ const ProfileImgStyle = styled.div`
 `;
 
 const EditIconStyle = styled.img`
-  width: 28px;
-  height: 28px;
+  width: 22px;
+  height: 22px;
   cursor: pointer;
 `;
 
-export { RegisterProfileIcon, ProfileImgStyle, EditIconStyle };
+export {ProfileImgStyle, EditIconStyle };

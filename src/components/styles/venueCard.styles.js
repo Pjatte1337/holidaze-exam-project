@@ -2,12 +2,12 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const VenueCard = styled(Link)`
-  background: #f1f7ff;
+  background: #CAD6E5;
   border-radius: 10px;
   color: black;
   text-decoration: none;
   width: 16rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
   filter: drop-shadow(1px 1px 2px grey);
 
   &:hover {

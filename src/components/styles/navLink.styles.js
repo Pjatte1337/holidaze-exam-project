@@ -4,22 +4,22 @@ import { Link } from "react-router-dom";
 const NavLink = styled(Link)`
   color: #000000;
   text-decoration: none;
-  font-size: 1.3em;
+  font-size: 1.2rem;
 
   :hover {
-    color: black;
+    color: #000000;
     text-decoration: underline;
   }
 
   @media (max-width: 767px) {
-    font-size: 1.1em;
+    font-size: 1rem;
   }
 `;
 
 const NavLinkDiv = styled.div`
   color: black;
   text-decoration: none;
-  font-size: 1.3em;
+  font-size: 1.2rem;
   cursor: pointer;
 
   :hover {
@@ -28,7 +28,7 @@ const NavLinkDiv = styled.div`
   }
 
   @media (max-width: 767px) {
-    font-size: 1.1em;
+    font-size: 1rem;
   }
 `;
 

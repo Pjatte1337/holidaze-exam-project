@@ -34,7 +34,7 @@ const PersonIconStyle = styled.img`
 `;
 
 const InputGuests = styled.div`
-  font-size: 1.2rem;
+  font-size: 1rem;
   width: 7rem;
   height: 2.5rem;
   padding: 0 0.1rem 0 0;
@@ -49,7 +49,7 @@ const InputGuests = styled.div`
     height: 100%;
     border: 0;
     border-radius: 8px;
-    font-size: 1.2em;
+    font-size: 1em;
     margin: 0 0.1rem 0 0;
 
     &:focus {
@@ -65,7 +65,7 @@ const InputGuests = styled.div`
 `;
 
 const DateInput = styled(DatePicker)`
-  font-size: 1.2rem;
+  font-size: 1rem;
   width: 10rem;
   height: 2.5rem;
   padding: 0 0.1rem 0 0;
