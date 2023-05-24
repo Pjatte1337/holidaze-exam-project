@@ -819,7 +819,7 @@ function VenuePage() {
                           </div>
                           <div className="d-flex flex-column mt-3">
                             <label className="fs-5" htmlFor="description">
-                              Description*
+                              Description
                             </label>
                             <TextArea
                               id="description"

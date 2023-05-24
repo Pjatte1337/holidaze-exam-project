@@ -188,7 +188,7 @@ const onSubmitHandler = async (e) => {
                     </div>
                   </div>
                   <div className="d-flex flex-column mt-3">
-                    <label className="fs-5" htmlFor='description'>Description*</label>
+                    <label className="fs-5" htmlFor='description'>Description</label>
                     <TextArea id="description" {...register("description")} />
                     <Error>{errors.description?.message}</Error>
                   </div>

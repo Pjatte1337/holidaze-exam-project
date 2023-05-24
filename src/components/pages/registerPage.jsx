@@ -136,7 +136,7 @@ function RegisterPage() {
             </div>
             <div className="d-flex flex-column">
               <label className="fs-5" htmlFor="retypePassword">
-                Re-enter Password
+                Repeat Password
               </label>
               <Input
                 type="password"
@@ -146,7 +146,6 @@ function RegisterPage() {
               <Error>{errors.retypePassword?.message}</Error>
             </div>
             <fieldset className="d-flex flex-wrap justify-content-center mb-3">
-              <legend className="fs-5">Type of user:</legend>
               <div className="me-4">
                 <Radio
                   type="radio"
