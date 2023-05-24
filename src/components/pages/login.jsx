@@ -1,5 +1,5 @@
-import { Button } from "../styles/buttons.styles";
-import { Input, Error } from "../styles/form.styles";
+import { Button } from "../styles/buttons";
+import { Input, Error } from "../styles/forms";
 import React from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";

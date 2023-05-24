@@ -1,4 +1,4 @@
-import { Hidden } from "../styles/hidden.styles";
+import { Hidden } from "../styles/hidden";
 import React from "react";
 import Search from "../search";
 import DocumentMeta from "react-document-meta";

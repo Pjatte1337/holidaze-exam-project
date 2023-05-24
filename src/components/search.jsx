@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import useApi from "./feature/useApi";
 import MagnifyingGlass from "../assets/images/search-icon.png";
-import { SearchWrap } from "./styles/searchWrap.styled";
-import { VenueCard } from "./styles/venueCard.styles";
-import { Hidden } from "./styles/hidden.styles";
+import { SearchWrap } from "./styles/searchWrap";
+import { VenueCard } from "./styles/venueCard";
+import { Hidden } from "./styles/hidden";
 import PersonIcon from "../assets/images/person-icon.png";
 import WifiIcon from "../assets/images/wifi-icon.png";
 import ParkingIcon from "../assets/images/parking-icon.png";
 import FoodIcon from "../assets/images/breakfast-icon.png";
 import PetsIcon from "../assets/images/pets-icon.png";
 import PlaceholderImg from "../assets/images/placeholder-image.png";
-import { Loader } from "./styles/loader.styles";
+import { Loader } from "./styles/loader";
 import { useEffect } from "react";
 
 function Search() {

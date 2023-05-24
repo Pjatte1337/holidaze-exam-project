@@ -5,15 +5,15 @@ import {
   DateInput,
   InputGuests,
   PersonIconStyle,
-} from "./styles/venue.styling";
-import { ButtonSmaller, ButtonSmaller2 } from "./styles/buttons.styles";
+} from "./styles/venue";
+import { ButtonSmaller, ButtonSmaller2 } from "./styles/buttons";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import { Error } from "./styles/form.styles";
+import { Error } from "./styles/forms";
 import { confirmAlert } from "react-confirm-alert";
 import "react-datepicker/dist/react-datepicker.css";
-import { Loader } from "./styles/loader.styles";
+import { Loader } from "./styles/loader";
 
 const schema = yup
   .object({

@@ -1,4 +1,4 @@
-import { Links } from "../styles/links.style";
+import { Links } from "../styles/links";
 import DocumentMeta from "react-document-meta";
 
 function RouteNotFound() {

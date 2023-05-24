@@ -1,9 +1,9 @@
 import { useParams } from "react-router-dom";
 import useApi from "../feature/useApi";
-import { Loader } from "../styles/loader.styles";
+import { Loader } from "../styles/loader";
 import PlaceholderImg from "../../assets/images/placeholder-image.png";
 import PersonIcon from "../../assets/images/person-icon.png";
-import { PersonIconStyle, VenueImgContainer } from "../styles/venue.styling";
+import { PersonIconStyle, VenueImgContainer } from "../styles/venue";
 import "react-datepicker/dist/react-datepicker.css";
 import EditBooking from "../edit";
 import DocumentMeta from "react-document-meta";

@@ -1,7 +1,7 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import holidazeLogo from "../assets/images/holidaze-logo.png";
-import { Logo } from "./styles/logo.styles";
-import { NavLink, NavLinkDiv } from "./styles/navLink.styles";
+import { Logo } from "./styles/logo";
+import { NavLink, NavLinkDiv } from "./styles/nav";
 import { useEffect } from "react";
 
 function Nav() {

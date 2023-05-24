@@ -1,7 +1,7 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import useApi from "../feature/useApi";
-import { Loader } from "../styles/loader.styles";
+import { Loader } from "../styles/loader";
 import PlaceholderImg from "../../assets/images/placeholder-image.png";
 import PersonIcon from "../../assets/images/person-icon.png";
 import WifiIcon from "../../assets/images/wifi-icon.png";
@@ -15,21 +15,21 @@ import {
   PersonIconStyle,
   VenueImgContainer,
   ServicesIcons,
-} from "../styles/venue.styling";
-import { ProfileImgStyle } from "../styles/icons.styles";
+} from "../styles/venue";
+import { ProfileImgStyle } from "../styles/icons";
 import {
   Button,
   Button2,
   ButtonSmaller,
   ButtonSmaller2,
-} from "../styles/buttons.styles";
-import { formatDate } from "../feature/timeDate";
+} from "../styles/buttons";
+import { formatDate } from "../feature/date";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import { Check, Error, Input2, TextArea } from "../styles/form.styles";
+import { Check, Error, Input2, TextArea } from "../styles/forms";
 import { confirmAlert } from "react-confirm-alert";
-import { Links } from "../styles/links.style";
+import { Links } from "../styles/links";
 import "react-datepicker/dist/react-datepicker.css";
 import DocumentMeta from "react-document-meta";
 

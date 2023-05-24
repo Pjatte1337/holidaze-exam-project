@@ -1,9 +1,9 @@
-import { Button } from "../styles/buttons.styles";
-import { Check, Error, Input2, TextArea } from "../styles/form.styles";
+import { Button } from "../styles/buttons";
+import { Check, Error, Input2, TextArea } from "../styles/forms";
 import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
-import { InputGuests } from "../styles/venue.styling";
+import { InputGuests } from "../styles/venue";
 import personIcon from "../../assets/images/person-icon.png";
 import { useNavigate } from "react-router-dom";
 import DocumentMeta from "react-document-meta";
