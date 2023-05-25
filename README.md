@@ -41,8 +41,8 @@ The product owner has requested links to the following resources:
 - [Design Prototype](https://www.figma.com/file/PAOvX7S4pPxQ1U9lW7uFPT/Project-Exam-Holidaze?type=design&node-id=0-1&t=dk67JehVg9KE5zI0-0)
 - [Style guide](https://www.figma.com/file/PAOvX7S4pPxQ1U9lW7uFPT/Project-Exam-Holidaze?type=design&node-id=14-205&t=PIHF6T46Vv2lH5Cb-0)
 - [Kanban Board](https://github.com/users/Pjatte1337/projects/3/views/3)
-- [Repository link](https://github.com/Pjatte1337/holidaze-exam-project). 
-- [Hosted application demo link](https://app.netlify.com/sites/holidaze-pe-2/deploys)
+- [Repository link](https://github.com/Pjatte1337/holidaze-exam-project)
+- [Hosted application demo link](https://holidaze-pe-2.netlify.app/)
 
 ## Design Prototype and Style Guide
 The Product Owner has requested style tile and prototype for this project.
