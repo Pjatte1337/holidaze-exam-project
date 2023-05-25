@@ -7,28 +7,26 @@ import * as yup from "yup";
 import { useNavigate } from "react-router-dom";
 import DocumentMeta from "react-document-meta";
 
-const schema = yup
-  .object({
-    email: yup
-      .string()
-      .email("Please enter your e-mail")
-      .matches(
-        /^[\w\-.]+@stud.?noroff.no$/,
-        "Must be a student noroff e-mail (ending in @stud.noroff.no)"
-      )
-      .required("Please enter a valid email address")
-      .typeError("Please enter a valid email address"),
-    password: yup
-      .string()
-      .min(8, "Must contain more than 8 characters")
-      .matches(
-        /(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]/,
-        "Must contain at least one uppercase and lowercase letter, as well as a number"
-      )
-      .required("Please enter your password")
-      .typeError("Please enter your password"),
-  })
-  .required();
+const schema = yup.object({
+  email: yup
+    .string()
+    .email("Please enter your e-mail")
+    .matches(
+      /^[\w\-.]+@stud.?noroff.no$/,
+      "Must be a student noroff e-mail (ending in @stud.noroff.no)"
+    )
+    .required("Please enter a valid email address")
+    .typeError("Please enter a valid email address"),
+  password: yup
+    .string()
+    .min(8, "Must contain more than 8 characters")
+    .matches(
+      /(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]/,
+      "Must contain at least one uppercase and lowercase letter, as well as a number"
+    )
+    .required("Please enter your password")
+    .typeError("Please enter your password"),
+}).required();
 
 function Login() {
   const navigate = useNavigate();
@@ -65,8 +63,7 @@ function Login() {
         localStorage.setItem("Manager", json.venueManager);
         reset();
         navigate("/");
-      }
-      if (json.errors) {
+      } else if (json.errors) {
         alert(json.errors[0].message);
       }
     } catch (error) {
