@@ -1,6 +1,6 @@
 # Noroff Project Exam 2
 - Holidaze Accommodation Application
-- [![Netlify Status](https://api.netlify.com/api/v1/badges/de73a66e-c5c0-4503-b176-f42247bc3b0a/deploy-status)](https://app.netlify.com/sites/holidaze-pe-2/deploys)
+- [![Netlify Status](https://api.netlify.com/api/v1/badges/de73a66e-c5c0-4503-b176-f42247bc3b0a/deploy-status)](https://app.netlify.com/sites/holidaze-pe-2/deploys) - [Hosted application demo link](https://holidaze-pe-2.netlify.app/)
 ![image](https://github.com/Pjatte1337/holidaze-exam-project/blob/master/src/assets/images/holidaze.png)
 
 ## Introduction
