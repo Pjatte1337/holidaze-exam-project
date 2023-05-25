@@ -1,70 +1,95 @@
-# Getting Started with Create React App
+# Noroff Project Exam 2
+- Holidaze Accommodation Application
+- [![Netlify Status](https://api.netlify.com/api/v1/badges/a19c72a4-2a87-4be9-8cba-4bbd1d14089a/deploy-status)](https://app.netlify.com/sites/holidaze-pe-2/deploys)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![image](https://github.com/Pjatte1337/holidaze-exam-project/blob/dev/src/assets/images/holidaze.png)
 
-## Available Scripts
+## Introduction
+This is my Project Exam 2 @ [Noroff - School of technology and digital media](https://www.noroff.no/).
+The website is an accommodation website using Noroff's live API. On the Holidaze website you can view, post and book venues for specific dates. which are built with Bootstrap and ReactJS.
 
-In the project directory, you can run:
+## Project Brief
+A newly launched accommodation booking site called Holidaze has approached you to develop a brand new front end for their application. While they have a list of required features, the design and user experience has not been specified. Working with the official API documentation, plan, design and build a modern front end accommodation booking application.
 
-### `npm start`
+There are two aspects to this brief: the customer-facing side of the website where users can book holidays at a venue, and an admin-facing side of the website where users can register and manage venues and bookings at those venues.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Requirements
+All API functionality is managed by an existing application. This project only covers the front-end application for the API.
+The API documentation and resources can be found under Holidaze in the Noroff API documentation.
+Some of the key user stories include:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- A user may view a list of Venues
+- A user may search for a specific Venue
+- A user may view a calendar with available dates for a Venue
+- A registered customer may create a booking at a Venue
+- A registered customer may view their upcoming bookings
+- A registered Venue manager may create a Venue and edit venues
+- A registered user can login, logout and update their avatar
 
-### `npm test`
+## Technical Restrictions
+The company CTO has set the following technical restrictions:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Must use an approved JavaScript Framework (React >16)
+- Must use an approved CSS Framework (Bootstrap >5, Styled Components, CSS Modules)
+- Must be hosted on an approved Static Host (Netlify)
+- Must use an approved Planning Application (Github Projects)
+- Must use an approved Design Application (Figma) 
 
-### `npm run build`
+## Project Resources
+The product owner has requested links to the following resources:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [Gantt Chart](https://github.com/users/Pjatte1337/projects/3/views/2)
+- [Design Prototype](https://www.figma.com/file/PAOvX7S4pPxQ1U9lW7uFPT/Project-Exam-Holidaze?type=design&node-id=0-1&t=dk67JehVg9KE5zI0-0)
+- [Style guide](https://www.figma.com/file/PAOvX7S4pPxQ1U9lW7uFPT/Project-Exam-Holidaze?type=design&node-id=14-205&t=PIHF6T46Vv2lH5Cb-0)
+- [Kanban Board](https://github.com/users/Pjatte1337/projects/3/views/3)
+- [Repository link](https://github.com/Pjatte1337/holidaze-exam-project). 
+- [Hosted application demo link](https://app.netlify.com/sites/holidaze-pe-2/deploys)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Design Prototype and Style Guide
+The Product Owner has requested style tile and prototype for this project.
+- [Style guide](https://www.figma.com/file/PAOvX7S4pPxQ1U9lW7uFPT/Project-Exam-Holidaze?type=design&node-id=14-205&t=PIHF6T46Vv2lH5Cb-0)
+- [Design Prototype](https://www.figma.com/file/PAOvX7S4pPxQ1U9lW7uFPT/Project-Exam-Holidaze?type=design&node-id=0-1&t=dk67JehVg9KE5zI0-0)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installation
 
-### `npm run eject`
+Clone the repo:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+git clone git@github.com:Pjatte1337/holidaze-exam-project.git
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Running
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Install dependencies
+```bash
+npm ci
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Start React Application
+```bash
+npm run start 
+```
 
-## Learn More
+## Contributing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+If you have a suggestion that would make this better, please fork the repo and create a pull request.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Acknowledgements
 
-### Code Splitting
+- Oliver Dipple
+- Martin Kruger
+- Marita Stenersen
+- Christopher Tønnesland
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Sources
 
-### Analyzing the Bundle Size
+- [Bootstrap documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+- [React Datepicker](https://reactdatepicker.com/)
+- [React Confirm Alert](https://www.npmjs.com/package/react-confirm-alert)
+- [React router dom](https://reactrouter.com/en/main/start/tutorial)
+ 
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Joakim Vanebo | Pjatte1337
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
