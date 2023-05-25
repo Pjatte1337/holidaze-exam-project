@@ -86,6 +86,8 @@ If you have a suggestion that would make this better, please fork the repo and c
 - [React Datepicker](https://reactdatepicker.com/)
 - [React Confirm Alert](https://www.npmjs.com/package/react-confirm-alert)
 - [React router dom](https://reactrouter.com/en/main/start/tutorial)
+- [Noroff API](https://nf-api.onrender.com/docs/static/index.html)
+- [Noroff API Doc](https://docs.noroff.dev/)
  
 ## Author
 
