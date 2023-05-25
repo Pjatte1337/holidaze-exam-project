@@ -36,24 +36,21 @@ The company CTO has set the following technical restrictions:
 - Must use an approved Design Application (Figma) 
 
 ## Project Resources
+The product owner has requested links to the following resources:
 
-## Project Timeline
+- [Gantt Chart](https://github.com/users/Pjatte1337/projects/3/views/2)
+- [Design Prototype](https://www.figma.com/file/PAOvX7S4pPxQ1U9lW7uFPT/Project-Exam-Holidaze?type=design&node-id=0-1&t=dk67JehVg9KE5zI0-0)
+- [Style guide](https://www.figma.com/file/PAOvX7S4pPxQ1U9lW7uFPT/Project-Exam-Holidaze?type=design&node-id=14-205&t=PIHF6T46Vv2lH5Cb-0)
+- [Kanban Board](https://github.com/users/Pjatte1337/projects/3/views/3)
+- [Repository link](https://github.com/Pjatte1337/holidaze-exam-project). 
+- [Hosted application demo link](https://app.netlify.com/sites/holidaze-pe-2/deploys)
 
 ## Design Prototype and Style Guide
 The Product Owner has requested style tile and prototype for this project.
-- [Style tile](https://www.figma.com/file/PAOvX7S4pPxQ1U9lW7uFPT/Project-Exam-Holidaze?type=design&node-id=14-205&t=PIHF6T46Vv2lH5Cb-0)
-- [Prototype](https://www.figma.com/file/PAOvX7S4pPxQ1U9lW7uFPT/Project-Exam-Holidaze?type=design&node-id=0-1&t=dk67JehVg9KE5zI0-0)
+- [Style guide](https://www.figma.com/file/PAOvX7S4pPxQ1U9lW7uFPT/Project-Exam-Holidaze?type=design&node-id=14-205&t=PIHF6T46Vv2lH5Cb-0)
+- [Design Prototype](https://www.figma.com/file/PAOvX7S4pPxQ1U9lW7uFPT/Project-Exam-Holidaze?type=design&node-id=0-1&t=dk67JehVg9KE5zI0-0)
 
-## Project Management
-
-## Repository
-
-The project repository can be found [here](https://github.com/Pjatte1337/holidaze-exam-project). 
-
-## Live Demo
-
-
-#### Installation
+## Installation
 
 Clone the repo:
 
