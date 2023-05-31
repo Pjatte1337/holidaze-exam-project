@@ -91,6 +91,6 @@ If you have a suggestion that would make this better, please fork the repo and c
  
 ## Author
 
-Joakim Vanebo | Pjatte1337
+[Joakim Vanebo](https://github.com/Pjatte1337) | Pjatte1337
 
 
