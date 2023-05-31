@@ -1,11 +1,16 @@
+
 # Noroff Project Exam 2
 - Holidaze Accommodation Application
-- [![Netlify Status](https://api.netlify.com/api/v1/badges/de73a66e-c5c0-4503-b176-f42247bc3b0a/deploy-status)](https://app.netlify.com/sites/holidaze-pe-2/deploys) - [Hosted application demo link](https://holidaze-pe-2.netlify.app/)
+- [![Netlify Status](https://api.netlify.com/api/v1/badges/de73a66e-c5c0-4503-b176-f42247bc3b0a/deploy-status)](https://app.netlify.com/sites/holidaze-pe-2/deploys) 
+-  [Hosted application demo link](https://holidaze-pe-2.netlify.app/)
+
 ![image](https://github.com/Pjatte1337/holidaze-exam-project/blob/master/src/assets/images/holidaze.png)
 
-## Introduction
+
+## Description
 This is my Project Exam 2 @ [Noroff - School of technology and digital media](https://www.noroff.no/).
-The website is an accommodation website using Noroff's live API. On the Holidaze website you can view, post and book venues for specific dates. which are built with Bootstrap and ReactJS.
+The website is an accommodation website using Noroff's live API. On the Holidaze website you can view, post and book venues for specific dates. 
+
 
 ## Project Brief
 A newly launched accommodation booking site called Holidaze has approached you to develop a brand new front end for their application. While they have a list of required features, the design and user experience has not been specified. Working with the official API documentation, plan, design and build a modern front end accommodation booking application.
@@ -49,6 +54,14 @@ The Product Owner has requested style tile and prototype for this project.
 - [Style guide](https://www.figma.com/file/PAOvX7S4pPxQ1U9lW7uFPT/Project-Exam-Holidaze?type=design&node-id=14-205&t=PIHF6T46Vv2lH5Cb-0)
 - [Design Prototype](https://www.figma.com/file/PAOvX7S4pPxQ1U9lW7uFPT/Project-Exam-Holidaze?type=design&node-id=0-1&t=dk67JehVg9KE5zI0-0)
 
+## Built With
+
+- [React.js](https://reactjs.org/)
+- [Bootstrap](https://getbootstrap.com)
+- [StyledComponents](https://styled-components.com/)
+- [CSS Modules](https://css-tricks.com/css-modules-part-1-need/)
+- [Noroff API](https://noroff-api-docs.netlify.app/social-endpoints/authentication)
+
 ## Installation
 
 Clone the repo:
@@ -73,6 +86,10 @@ npm run start
 
 If you have a suggestion that would make this better, please fork the repo and create a pull request.
 
+## Contact
+
+[My LinkedIn page](https://www.linkedin.com/in/joakim-vanebo-93a64562/)
+
 ## Acknowledgements
 
 - Oliver Dipple
@@ -92,5 +109,3 @@ If you have a suggestion that would make this better, please fork the repo and c
 ## Author
 
 [Joakim Vanebo](https://github.com/Pjatte1337) | Pjatte1337
-
-
